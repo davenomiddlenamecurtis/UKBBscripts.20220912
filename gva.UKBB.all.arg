@@ -1,0 +1,24 @@
+--bed-file /home/rejudcu/vcf/UKBB/ukb_efe_chr1_v1.bed
+--fam-file /home/rejudcu/vcf/UKBB/ukb51119_efe_chr1_v1_s49953.fam
+--bim-file /home/rejudcu/vcf/UKBB/ukb_fe_exm_chrall_v1.bim
+--ref-gene-file /home/rejudcu/reference38/refseqgenes.hg38.20191018.sorted.onePCDHG.txt
+--reference-path /home/rejudcu/reference38
+--margin 0
+--upstream 0 
+--downstream 0
+--weight-factor 10.0 
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "/home/rejudcu/vcf/UKBB/all.UKBB.mult.annot.vcf.gz")) GETWEIGHT "DEFAULTVEPWEIGHTS" ) + ( ( GETPOLYPHEN ("CSQ" VCFLOOKUP "/home/rejudcu/vcf/UKBB/all.UKBB.mult.annot.vcf.gz") ) GETWEIGHT "/home/rejudcu/reference/POLYPHENWEIGHTS.txt"  ) +  ( ( GETSIFT ("CSQ" VCFLOOKUP "/home/rejudcu/vcf/UKBB/all.UKBB.mult.annot.vcf.gz") ) GETWEIGHT "/home/rejudcu/reference/SIFTWEIGHTS.txt" ) '
+--comment-expression ' "CSQ" VCFLOOKUP "/home/rejudcu/vcf/UKBB/all.UKBB.mult.annot.vcf.gz" '
+--merge-alt-alleles 0
+--consequence-threshold 0
+--use-consequence-weights 1 
+--only-use-SNPs 0
+--write-comments 1 
+--write-score-file 1
+--add-chr 0
+--unknown-if-untyped 0
+--unknown-if-no-pass 0
+--skip-if-no-pass 0
+--ignore-alleles 1
+--GQ-threshold 0
+--varfile /home/rejudcu/vcf/UKBB/ukb41465.exomes.allchr.eigenvec

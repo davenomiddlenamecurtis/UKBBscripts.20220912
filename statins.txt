@@ -1,0 +1,8 @@
+278     1140861970      lipostat
+300     1140861958      simvastatin
+392     1140888594      fluvastatin
+428     1140888648      pravastatin
+925     1140910632      eptastatin
+935     1140910654      velastatin
+2132    1141146234      atorvastatin
+4866    1141192410      rosuvastatin

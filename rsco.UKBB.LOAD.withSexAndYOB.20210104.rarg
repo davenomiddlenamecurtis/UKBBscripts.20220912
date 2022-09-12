@@ -1,0 +1,13 @@
+--IDphenotypefile  /home/rejudcu/UKBB/LOAD/UKBB.LOAD.20210104.txt
+--inputscorefilespec /cluster/project9/bipolargenomes/UKBB/UKBB.HL.all.20201231/results/UKBB.HL.all.20201231.GENE.sco
+--outputfilespec /cluster/project9/bipolargenomes/UKBB/UKBB.LOAD.withSexAndYOB.20210104/results/UKBB.HL.withSex.R.GENE.rsao
+--summaryoutputfile /cluster/project9/bipolargenomes/UKBB/UKBB.LOAD.withSexAndYOB.20210104/UKBB.LOAD.withSexAndYOB.20210104.summ.txt
+--varfile /SAN/ugi/UGIbiobank/data/downloaded/ukb23155.common.all.eigenvec.txt
+--varfile /home/rejudcu/UKBB/UKBB.sex.20201111.txt 
+--varfile /home/rejudcu/UKBB/UKBB.YOB.20201103.txt 
+--dottest 1
+--dolrtest 1  
+--testfile /home/rejudcu/pars/justScore.tst
+
+
+

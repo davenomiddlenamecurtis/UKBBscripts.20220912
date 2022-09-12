@@ -1,0 +1,12 @@
+1	I10	I10 Essential (primary) hypertension
+2	I11	I11 Hypertensive heart disease
+3	I110	I11.0 Hypertensive heart disease with (congestive) heart failure
+4	I119	I11.9 Hypertensive heart disease without (congestive) heart failure
+5	I12	I12 Hypertensive renal disease
+6	I120	I12.0 Hypertensive renal disease with renal failure
+7	I129	I12.9 Hypertensive renal disease without renal failure
+8	I13	I13 Hypertensive heart and renal disease
+8	I130	I13.0 Hypertensive heart and renal disease with (congestive) heart failure
+10	I131	I13.1 Hypertensive heart and renal disease with renal failure
+11	I132	I13.2 Hypertensive heart and renal disease with both (congestive) heart failure and renal failure
+12	I139	I13.9 Hypertensive heart and renal disease, unspecified

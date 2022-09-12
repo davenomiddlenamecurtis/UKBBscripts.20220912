@@ -1,0 +1,20 @@
+--arg-file /home/rejudcu/pars/gva.UKBB.all.20201231.arg
+--ID-and-phenotype-file /home/rejudcu/UKBB/BMI.20210111/UKBB.BMI.20201103.txt
+--test-name gva.UKBB.BMI.20210118
+--lamda 0
+--isquantitative 1 
+--varfile /home/rejudcu/UKBB/UKBB.sex.20201111.txt 
+--dottest 0 
+--dolinrtest 1  
+--maxmaf 0.01
+--exclusion-list -
+(FREQ(0)=0 & FREQ(1)=0) | (FREQ(0)=1 & FREQ(1)=1) 
+FREQ(0)>0.01 & FREQ(0)<0.99 & FREQ(1)>0.01 & FREQ(1)<0.99
+NSUB(0)<NSAMPLE(0)*0.9 | NSUB(1)<NSAMPLE(1)*0.9 
+(0 GENOCOUNT 0) > (0 GENOCOUNT 1) & (0 GENOCOUNT 2) > (0 GENOCOUNT 1) & (1 GENOCOUNT 0) > (1 GENOCOUNT 1) & (1 GENOCOUNT 2) > (1 GENOCOUNT 1)     
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+Row	Alcohol	RedWine	RoseWine	WhiteWine	BeerCider	Foritified	Spirits	Other
+Start	6639	6644	6649	6654	6659	6664	6669	6674
+Stop	6643	6648	6653	6658	6663	6668	6673	6678
+Strength	0	1.5	1.5	1.5	2.6	1.1	1	1.5

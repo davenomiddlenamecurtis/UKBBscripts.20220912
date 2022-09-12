@@ -1,0 +1,1 @@
+--IDphenotypefile  /home/rejudcu/UKBB/alcohol/UKBB.alcHigh.20201229.txt --dottest 1 --varfile /SAN/ugi/UGIbiobank/data/downloaded/ukb23155.common.all.eigenvec  --varfile /home/rejudcu/UKBB/UKBB.sex.20201111.txt --dolrtest 1  --testfile /home/rejudcu/pars/justScore.tst

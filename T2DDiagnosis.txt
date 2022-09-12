@@ -1,0 +1,11 @@
+E11	E11 Non-insulin-dependent diabetes mellitus	No	2356	69
+E110	E11.0 With coma	Yes	2357	2356
+E111	E11.1 With ketoacidosis	Yes	2358	2356
+E112	E11.2 With renal complications	Yes	2359	2356
+E113	E11.3 With ophthalmic complications	Yes	2360	2356
+E114	E11.4 With neurological complications	Yes	2361	2356
+E115	E11.5 With peripheral circulatory complications	Yes	2362	2356
+E116	E11.6 With other specified complications	Yes	2363	2356
+E117	E11.7 With multiple complications	Yes	2364	2356
+E118	E11.8 With unspecified complications	Yes	2365	2356
+E119	E11.9 Without complications	Yes	2366	2356

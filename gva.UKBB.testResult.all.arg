@@ -1,0 +1,3 @@
+--arg-file /home/rejudcu/pars/gva.UKBB.common.lr.arg
+--ID-and-phenotype-file /home/rejudcu/vcf/UKBB/testResult.20200424.tsv
+

@@ -1,0 +1,1 @@
+--IDphenotypefile /home/rejudcu/UKBB/LOAD/UKBB.FAMLOADScore.20201208.txt --isquantitative 1 --varfile /SAN/ugi/UGIbiobank/data/downloaded/ukb23155.common.all.eigenvec --varfile /home/rejudcu/UKBB/UKBB.sex.20201111.txt --dottest 0 --dolinrtest 1  --lintestfile /home/rejudcu/pars/justScore.tst

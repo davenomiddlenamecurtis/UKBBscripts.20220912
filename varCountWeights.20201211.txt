@@ -1,0 +1,39 @@
+NULL_CONSEQUENCE	0
+intergenic_variant	0
+feature_truncation	1
+regulatory_region_variant	1
+feature_elongation	1
+regulatory_region_amplification	1
+regulatory_region_ablation	1
+TF_binding_site_variant	1
+TFBS_amplification	1
+TFBS_ablation	1
+downstream_gene_variant	1
+upstream_gene_variant	1
+non_coding_transcript_variant	1
+NMD_transcript_variant	1
+intron_variant	1
+non_coding_transcript_exon_variant	1
+3_prime_UTR_variant	10000
+5_prime_UTR_variant	10
+mature_miRNA_variant	0
+coding_sequence_variant	0
+synonymous_variant	100
+stop_retained_variant	0
+incomplete_terminal_codon_variant	0
+splice_region_variant	1000
+protein_altering_variant	100000
+missense_variant	100000
+inframe_deletion	1000000
+inframe_insertion	1000000
+transcript_amplification	1000000
+start_lost	0
+stop_lost	0
+frameshift_variant	10000000
+stop_gained	10000000
+splice_donor_variant	100000000
+splice_acceptor_variant	100000000
+transcript_ablation	10000000
+
+
+there are no intergenic_variant, mature_miRNA_variant, coding_sequence_variant, stop_retained_variant, incomplete_terminal_codon_variant, start_lost or stop_lost variants

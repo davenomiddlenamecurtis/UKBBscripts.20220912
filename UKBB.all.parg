@@ -1,0 +1,6 @@
+--pathway-file /home/rejudcu/reference/c5.all.v5.0.symbols.gmt
+--varfile /home/rejudcu/vcf/UKBB/ukb41465.exomes.allchr.eigenvec
+--isquantitative 1
+--dottest 0
+--dolinrtest 1
+

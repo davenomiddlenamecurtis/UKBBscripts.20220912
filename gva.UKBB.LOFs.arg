@@ -1,0 +1,39 @@
+--bed-file /home/rejudcu/vcf/UKBB.20201103/ukb23155_c*_b0_v1.bed
+--fam-file /home/rejudcu/vcf/UKBB.20201103/ukb23155_c22_b0_v1_s200632.fam
+--bim-file /home/rejudcu/vcf/UKBB.20201103/UKBexomeOQFE_chr*.bim
+--ref-gene-file /home/rejudcu/reference38/refseqgenes.hg38.20191018.sorted.onePCDHG.txt
+--reference-path /home/rejudcu/reference38
+--margin 0
+--upstream 0 
+--downstream 0
+--weight-factor 10.0 
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "/home/rejudcu/vcf/UKBB.20201103/UKBexomeOQFE_chr.mult.annot.vcf.gz")) GETWEIGHT "/home/rejudcu/reference/LOF.weights.txt" ) '
+--comment-expression ' "CSQ" VCFLOOKUP "/home/rejudcu/vcf/UKBB.20201103/UKBexomeOQFE_chr.mult.annot.vcf.gz" '
+--exclude-expression 'ATTRIB ("WEIGHT") < 10'
+--merge-alt-alleles 0
+--consequence-threshold 0
+--use-consequence-weights 1 
+--only-use-SNPs 0
+--write-comments 1 
+--add-chr 0
+--unknown-if-untyped 0
+--unknown-if-no-pass 0
+--skip-if-no-pass 0
+--ignore-alleles 0
+--GQ-threshold 0
+--ID-and-phenotype-file /home/rejudcu/UKBB/lipids/UKBB.HL.20201103.txt
+--isquantitative 0
+--maxmaf 0.01
+--dottest 1
+--dolrtest 0
+--exclusion-list -
+(FREQ(0)=0 & FREQ(1)=0) | (FREQ(0)=1 & FREQ(1)=1) 
+FREQ(0)>0.01 & FREQ(0)<0.99 & FREQ(1)>0.01 & FREQ(1)<0.99
+NSUB(0)<NSAMPLE(0)*0.9 | NSUB(1)<NSAMPLE(1)*0.9 
+(0 GENOCOUNT 0) > (0 GENOCOUNT 1) & (0 GENOCOUNT 2) > (0 GENOCOUNT 1) & (1 GENOCOUNT 0) > (1 GENOCOUNT 1) & (1 GENOCOUNT 2) > (1 GENOCOUNT 1)     
+
+
+
+
+
+

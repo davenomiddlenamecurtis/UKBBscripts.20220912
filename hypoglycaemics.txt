@@ -1,0 +1,22 @@
+1140868902	acarbose
+1140868908	glucobay 50mg tablet
+1140874646	glipizide
+1140874658	gliquidone
+1140874660	glurenorm 30mg tablet
+1140874718	glibenclamide
+1140874724	daonil 5mg tablet
+1140874726	semi-daonil 2.5mg tablet
+1140874744	gliclazide
+1140874746	diamicron 80mg tablet
+1140884600	metformin
+1141152590	glimepiride
+1141156984	amaryl 1mg tablet
+1141157284	glipizide product
+1141168660	repaglinide
+1141171646	pioglitazone
+1141171652	actos 15mg tablet
+1141173786	starlix 60mg tablet
+1141173882	nateglinide
+1141177600	rosiglitazone
+1141177606	avandia 4mg tablet
+1141189090	rosiglitazone 1mg / metformin 500mg tablet

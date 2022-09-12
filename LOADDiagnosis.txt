@@ -1,0 +1,8 @@
+coding	meaning	node_id	parent_id	selectable
+F00	F00 Dementia in Alzheimer disease	2709	76	N
+F000	F00.0 Dementia in Alzheimer disease with early onset	2710	2709	Y
+F001	F00.1 Dementia in Alzheimer disease with late onset	2711	2709	Y
+F002	F00.2 Dementia in Alzheimer disease, atypical or mixed type	2712	2709	Y
+F009	F00.9 Dementia in Alzheimer disease, unspecified	2713	2709	Y
+F03	F03 Unspecified dementia	2728	76	Y
+F051	F05.1 Delirium superimposed on dementia	2732	2730	Y

@@ -1,0 +1,46 @@
+1140888578	antihypertensive
+1140860696	lisinopril
+1140860790	enalapril maleate+hydrochlorothiazide 20mg/12.5mg tablet
+1140860806	ramipril
+1140888560	perindopril
+1140888552	enalapril
+1140916356	losartan
+1141145660	valsartan
+1141151016	losartan potassium+hydrochlorothiazide 50mg/12.5mg tablet
+1141152998	irbesartan
+1141156836	candesartan cilexetil
+1141172682	irbesartan+hydrochlorothiazide 150mg/12.5mg tablet
+1141193282	olmesartan
+1141201038	valsartan+hydrochlorothiazide 80mg/12.5mg tablet
+1140860426	atenolol+nifedipine 50mg/20mg m/r capsule
+1140861088	nifedipine
+1140879802	amlodipine
+1140888646	felodipine
+1141165470	felodipine+ramipril
+1140879806	diltiazem
+1140926778	diltiazem hcl+hydrochlorothiazide 150mg/12.5mg m/r capsule
+1140888510	verapamil
+1141150926	verapress mr 240 m/r tablet
+1141150898	angiotensin ii receptor antagonist+diuretic
+1141153328	trandolapril+verapamil hydrochloride
+1140866078	indapamide
+1141180592	perindopril+indapamide
+1141194794	bendroflumethiazide
+1141194800	bendroflumethiazide+potassium 2.5mg/7.7mmol m/r tablet
+1141194804	nadolol+bendroflumethiazide 40mg/5mg tablet
+1141194808	timolol maleate+bendroflumethiazide 10mg/2.5mg tablet
+1141194810	atenolol+bendroflumethiazide
+1140860426	atenolol+nifedipine 50mg/20mg m/r capsule
+1140866738	atenolol
+1141146124	atenolol+chlorthalidone
+1141146126	atenolol+bendrofluazide
+1141146128	atenolol+co-amilozide
+1141180778	atenolol+chlortalidone
+1140879760	bisoprolol
+1140864950	bisoprolol fumarate+hydrochlorothiazide 10mg/6.25mg tablet
+1140879778	doxazosin
+1140888512	amiloride
+1140866422	amiloride hcl+cyclopenthiazide 2.5mg/250micrograms tablet
+1140866426	amiloride hydrochloride+bumetanide 5mg/1mg tablet
+1140866236	spironolactone
+

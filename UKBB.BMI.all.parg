@@ -1,0 +1,4 @@
+--score-table-file /cluster/project9/bipolargenomes/UKBB/UKBB.BMI.all/pathways/UKBB.BMI.allScores.txt
+--output-file-spec /cluster/project9/bipolargenomes/UKBB/UKBB.BMI.all/pathways/UKBB.BMI.all.PATHWAY.pao
+--summary-file /cluster/project9/bipolargenomes/UKBB/UKBB.BMI.all/pathways/UKBB.BMI.all.summ.pao
+--arg-file /home/rejudcu/pars/UKBB.all.parg

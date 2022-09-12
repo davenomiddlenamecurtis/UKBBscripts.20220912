@@ -1,0 +1,6 @@
+First	Last	Source
+4726	4747	ExternalCauses
+4748	4813	DiagnosesMain
+4842	5025	DiagnosesSecondary
+5603	5815	DiagnosesHES
+4501	4530	CauseOfDeath

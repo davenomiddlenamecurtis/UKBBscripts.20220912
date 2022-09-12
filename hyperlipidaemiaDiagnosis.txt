@@ -1,0 +1,4 @@
+7228	E785	E78.5 Hyperlipidaemia, unspecified
+18273	E784	E78.4 Other hyperlipidaemia
+18276	E782	E78.2 Mixed hyperlipidaemia
+18280	E780	E78.0 Pure hypercholesterolaemia
