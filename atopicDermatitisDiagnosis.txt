@@ -1,0 +1,4 @@
+L20	L20 Atopic dermatitis	5345	145	N
+L200	L20.0 Besnier's prurigo	5346	5345	Y
+L208	L20.8 Other atopic dermatitis	5347	5345	Y
+L209	L20.9 Atopic dermatitis, unspecified	5348	5345	Y

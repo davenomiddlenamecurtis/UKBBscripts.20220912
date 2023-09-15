@@ -26,6 +26,12 @@ wd="/home/rejudcu/UKBB/BMI.20210111/genes"
 # geneListFile="allGenes.BMI.20210113.txt"
 geneListFile="genesFrom640K.txt"
 
+test="UKBB.BMI.varCounts.forHTR2C.20230102"
+scoreFileTemplate="UKBB.BMI.varCounts.forHTR2C.20230102.%s.sco"
+argFile="gva.UKBB.BMI.varCounts.forHTR2C.20230102.arg"
+wd="/home/rejudcu/UKBB/HTR2C"
+
+
 genes=c(
 "LDLR",
 "PCSK9",
@@ -52,6 +58,10 @@ genes=c(
 "HMGCR",
 "APOB",
 "STAP1")
+
+genes=c(
+"HTR2C"
+)
 
 
 setwd(wd)

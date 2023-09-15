@@ -8,7 +8,7 @@ model="UKBB.psoriasis.separateVarCounts.20230329"
 gene="NPC1L1"
 
 args = commandArgs(trailingOnly=TRUE)
-# args=c("UKBB.HT.varCounts.20210205","HSD11B2")
+# args=c("UKBB.HT.separateVarCounts.20230825","DNMT3A")
 if (length(args)!=2) {
   print("Provide model and gene as arguments")
   quit()
@@ -17,10 +17,11 @@ model=args[1]
 gene=args[2]
 
 
-PCsFile="/SAN/ugi/UGIbiobank/data/downloaded/ukb23155.common.all.eigenvec"
-sexFile="/home/rejudcu/UKBB/UKBB.sex.20201111.txt"
+PCsFile="/SAN/ugi/UGIbiobank/data/downloaded/ukb23158.common.all.20230806.eigenvec.txt"
+sexFile="/home/rejudcu/UKBB/UKBB.sex.20230807.txt"
+# covariates for all 470K exomes
 
-nVarTypes=12 # 10000000000
+nVarTypes=11
 types=c(
 "IntronicEtc",
 "FivePrime",
@@ -29,13 +30,12 @@ types=c(
 "ThreePrime",
 "ProteinAltering",
 "InDel",
-"Disruptive",
-"SpliceSite",
+"LOF",
 "SIFT",
 "PossDam",
 "ProbDam")
+# as in gva.UKBB.separateVarCounts.20230825.arg
 
-argFile=sprintf("~/pars/gva.%s.arg",model)
 varScoreFile=sprintf("%s.%s.sco",model,gene)
 saoFile=sprintf("%s.%s.sao",model,gene)
 resultsFile=sprintf("analyseVarTypes.results.%s.txt",gene)
@@ -44,9 +44,9 @@ if (file.exists(resultsFile)) {
   quit()
 }
 
-if (!file.exists(saoFile)) {
-	commLine=sprintf("if [ ! -e %s ];then geneVarAssoc --arg-file %s --gene %s; fi",varScoreFile, argFile, gene)
-	system(commLine)
+if (!file.exists(varScoreFile)) {
+	print(sprintf("Cannot find score file %s",varScoreFile))
+	quit()
 }
 
 lines=readLines(saoFile)
@@ -60,6 +60,7 @@ for (ll in 1:length(lines))
 
 PCsTable=data.frame(read.table(PCsFile,header=TRUE,sep="\t"))
 sexTable=data.frame(read.table(sexFile,header=TRUE,sep="\t"))
+colnames(sexTable)=c("IID","Sex")
 
 colnames(PCsTable)[1:2]=c("FID","IID")
 formulaString=("Pheno ~")

@@ -20,7 +20,7 @@ gene=args[2]
 PCsFile="/SAN/ugi/UGIbiobank/data/downloaded/ukb23155.common.all.eigenvec"
 sexFile="/home/rejudcu/UKBB/UKBB.sex.20201111.txt"
 
-nVarTypes=12 # 10000000000
+nVarTypes=11
 types=c(
 "IntronicEtc",
 "FivePrime",
@@ -29,8 +29,7 @@ types=c(
 "ThreePrime",
 "ProteinAltering",
 "InDel",
-"Disruptive",
-"SpliceSite",
+"LOF",
 "SIFT",
 "PossDam",
 "ProbDam")

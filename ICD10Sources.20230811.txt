@@ -1,0 +1,6 @@
+First	Last	Source
+9542	9563	ExternalCauses
+9564	9629	DiagnosesMain
+9658	9841	DiagnosesSecondary
+10413	10625	DiagnosesHES
+9318	9319	CauseOfDeath

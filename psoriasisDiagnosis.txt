@@ -1,0 +1,9 @@
+L40	L40 Psoriasis	54130	1460	N
+L400	L40.0 Psoriasis vulgaris	54140	54130	Y
+L401	L40.1 Generalised pustular psoriasis	54150	54130	Y
+L402	L40.2 Acrodermatitis continua	54160	54130	Y
+L403	L40.3 Pustulosis palmaris et plantaris	54170	54130	Y
+L404	L40.4 Guttate psoriasis	54180	54130	Y
+L405	L40.5 Arthropathic psoriasis	54190	54130	Y
+L408	L40.8 Other psoriasis	54200	54130	Y
+L409	L40.9 Psoriasis, unspecified	54210	54130	Y

@@ -1,0 +1,5 @@
+J45	J45 Asthma	4648	127	N
+J450	J45.0 Predominantly allergic asthma	4649	4648	Y
+J451	J45.1 Nonallergic asthma	4650	4648	Y
+J458	J45.8 Mixed asthma	4651	4648	Y
+J459	J45.9 Asthma, unspecified	4652	4648	Y
