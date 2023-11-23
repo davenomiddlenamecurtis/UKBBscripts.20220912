@@ -1,0 +1,15 @@
+--arg-file /home/rejudcu/UKBB/annot.2023/gva.UKBB.forAnnot.20231025.arg
+--ID-and-phenotype-file /home/rejudcu/UKBB/HT/UKBB.HT.txt
+--test-name HT.forAnnot.20231109
+--lamda 0
+--isquantitative 0
+--dottest 0 
+--dolrtest 0  
+--maxmaf 0.01
+--arg-file /home/rejudcu/UKBB/annot/gva.exclusionList.arg
+
+
+
+
+
+

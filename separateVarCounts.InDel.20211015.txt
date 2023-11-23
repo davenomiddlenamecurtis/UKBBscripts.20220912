@@ -1,0 +1,6 @@
+DEFAULT	0
+inframe_deletion	1
+inframe_insertion	1
+transcript_amplification	1
+
+there are no intergenic_variant, mature_miRNA_variant, coding_sequence_variant, stop_retained_variant, incomplete_terminal_codon_variant, start_lost or stop_lost variants

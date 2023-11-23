@@ -1,0 +1,5 @@
+polyphen_missing 0
+benign 0
+unknown 0
+possibly_damaging 1
+probably_damaging 0

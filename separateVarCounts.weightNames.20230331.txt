@@ -1,0 +1,11 @@
+IntronicEtc
+FivePrime
+Synonymous
+SpliceRegion
+ThreePrime
+ProteinAltering
+InDel
+LOF
+SIFT
+PossDam
+ProbDam

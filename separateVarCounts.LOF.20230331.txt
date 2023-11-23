@@ -1,0 +1,8 @@
+DEFAULT	0
+frameshift_variant	1
+stop_gained	1
+transcript_ablation	1
+splice_donor_variant    1
+splice_acceptor_variant 1
+
+there are no intergenic_variant, mature_miRNA_variant, coding_sequence_variant, stop_retained_variant, incomplete_terminal_codon_variant, start_lost or stop_lost variants

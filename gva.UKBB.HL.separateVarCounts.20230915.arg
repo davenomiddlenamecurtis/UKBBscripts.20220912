@@ -1,0 +1,18 @@
+--arg-file gva.UKBB.separateVarCounts.20230825.arg
+--ID-and-phenotype-file UKBB.HL.20230915.txt
+--test-name UKBB.HL.separateVarCounts.20230915
+--isquantitative 0 
+--dottest 1 
+--dolrtest 0
+--maxmaf 0.01
+--exclusion-list -
+(FREQ(0)=0 & FREQ(1)=0) | (FREQ(0)=1 & FREQ(1)=1) 
+FREQ(0)>0.01 & FREQ(0)<0.99 & FREQ(1)>0.01 & FREQ(1)<0.99
+NSUB(0)<NSAMPLE(0)*0.9 | NSUB(1)<NSAMPLE(1)*0.9 
+(0 GENOCOUNT 0) > (0 GENOCOUNT 1) & (0 GENOCOUNT 2) > (0 GENOCOUNT 1) & (1 GENOCOUNT 0) > (1 GENOCOUNT 1) & (1 GENOCOUNT 2) > (1 GENOCOUNT 1)     
+
+
+
+
+
+

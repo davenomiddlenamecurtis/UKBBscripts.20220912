@@ -1,0 +1,14 @@
+--arg-file gva.UKBB.forAnnot.20231112.arg
+--ID-and-phenotype-file UKBB.HT.20230816.txt
+--test-name UKBB.HT.forAnnot.20231112
+--lamda 0
+--isquantitative 0 
+--dottest 0 
+--dolrtest 0  
+--maxmaf 0.01
+
+
+
+
+
+

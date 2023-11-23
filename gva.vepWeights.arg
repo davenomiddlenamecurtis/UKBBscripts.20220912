@@ -1,0 +1,20 @@
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz")) GETWEIGHT "catWeight.FivePrime.txt" )'
+--weight-name FivePrime
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz")) GETWEIGHT "catWeight.InDelEtc.txt" )'
+--weight-name InDelEtc
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz")) GETWEIGHT "catWeight.IntronicEtc.txt" )'
+--weight-name IntronicEtc
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz")) GETWEIGHT "catWeight.LOF.txt" )'
+--weight-name LOF
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz")) GETWEIGHT "catWeight.ProteinAltering.txt" )'
+--weight-name ProteinAltering
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz")) GETWEIGHT "catWeight.SpliceRegion.txt" )'
+--weight-name SpliceRegion
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz")) GETWEIGHT "catWeight.Synonymous.txt" )'
+--weight-name Synonymous
+--weight-expression '( ( GETVEP ("CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz")) GETWEIGHT "catWeight.ThreePrime.txt" )'
+--weight-name ThreePrime
+--weight-expression '( ( "CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz") GETVEPFIELD 35 ) GETWEIGHT "weights.AM.20231026.txt" '
+--weight-name AM_prediction
+--weight-expression '( ( "CSQ" VCFLOOKUP "ukb23158.AM.annot.vcf.gz") GETVEPFIELD 37 ) * 10 '
+--weight-name AM_score

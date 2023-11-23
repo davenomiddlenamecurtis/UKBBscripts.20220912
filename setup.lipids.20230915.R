@@ -82,10 +82,10 @@ hyperlipidaemia$HL=0
 hyperlipidaemia$HL[rowSums(hyperlipidaemia[,3:6]==1, na.rm = TRUE)>0]=1
 for (c in 2:ncol(hyperlipidaemia)) {
   toWrite=hyperlipidaemia[,c(1,c)]
-  write.table(toWrite,sprintf("../HL.2023/UKBB.%s.20201103.txt",colnames(hyperlipidaemia)[c]),sep="\t",col.names=TRUE,row.names=FALSE,quote=FALSE)
+  write.table(toWrite,sprintf("../HL.2023/UKBB.%s.20230915.txt",colnames(hyperlipidaemia)[c]),sep="\t",col.names=TRUE,row.names=FALSE,quote=FALSE)
 }
 
-write.table(hyperlipidaemia,"../HL.2023/UKBB.HLall.txt",sep="\t",col.names=TRUE,row.names=FALSE,quote=FALSE)
+write.table(hyperlipidaemia,"../HL.2023/UKBB.HLall.20230915.txt",sep="\t",col.names=TRUE,row.names=FALSE,quote=FALSE)
 
 phenos=as.matrix(hyperlipidaemia[,2:5])
 print(cor(phenos))
