@@ -50,7 +50,7 @@ LOAD$LOADMother[rowSums(MotherIllness==10, na.rm = TRUE)>0]=1 # 10 is code for d
 # remove rows with missing parental data, or use an average. or just use all, I think
 
 LOAD$LOADScore=LOAD$LOADICD10*2+LOAD$LOADFather+LOAD$LOADMother
-LOAD$LOADMax2=mLOAD$LOADScore
+LOAD$LOADMax2=LOAD$LOADScore
 LOAD$LOADMax2[LOAD$LOADMax2>2]=2
 for (c in 2:ncol(LOAD)) {
   toWrite=LOAD[,c(1,c)]
@@ -58,10 +58,5 @@ for (c in 2:ncol(LOAD)) {
 }
 
 write.table(LOAD,"UKBB.allFAMLOAD.20201208.txt",sep="\t",col.names=TRUE,row.names=FALSE,quote=FALSE)
-
-temp=data.frame(read.table("UKBB.LOADScore.20201208.txt",header=TRUE,sep="\t"))
-colnames(temp)=c("IID","LOADMax2")
-temp$LOADMax2[temp$LOADMax2>2]=2
-write.table(temp,"UKBB.FAMLOADMax2.20201208.txt",sep="\t",col.names=TRUE,row.names=FALSE,quote=FALSE)
 
 
