@@ -4,25 +4,25 @@
 # then run scoreassoc on second dataset with those pairs
 
 NumBest=100
-SummFile="/cluster/project9/bipolargenomes/UKBB/UKBB.migraine.annot.HPC.20231126/UKBB.migraine.annot.HPC.20231126.summ.txt"
-BestModel="UKBB.migraine.forAnnot.20240118"
-BestGenesFile="migraine.20240118.bestGenes.txt"
+SummFile="/cluster/project9/bipolargenomes/UKBB/UKBB.depression.annot.20240208/UKBB.depression.annot.20240208.summ.txt"
+BestModel="UKBB.depression.forAnnot.20240208"
+BestGenesFile="depression.20240208.bestGenes.txt"
 TestsFile="/home/rejudcu/pars/UKBB.annot.allTests.20231126.txt"
-TopTestsFile="migraine.topTests.240208.txt"
-NewModel="UKBB.migraine.best.annot.20240208"
+TopTestsFile="depression.topTests.240208.txt"
+NewModel="UKBB.depression.best.annot.20240208"
 NewArgFile=sprintf("/home/rejudcu/pars/rsco.%s.rarg",NewModel)
 
 ScoreAssocCommand="subComm.sh /share/apps/R-3.6.1/bin/Rscript /home/rejudcu/scoreassoc/scoreassoc.R"
 
 
-wd="/home/rejudcu/UKBB/migraine.20240118"
+wd="/home/rejudcu/UKBB/depression.20240208"
 setwd(wd)
 
 Summary=data.frame(read.table(SummFile,header=TRUE,sep="\t",stringsAsFactors=FALSE))
 Summary$MaxMLP=apply(Summary[,2:ncol(Summary)], 1, max)# create new column
 Summary=Summary[order(Summary$MaxMLP,decreasing=TRUE),]
 Top=Summary[1:NumBest,]
-TopGenes=Top[1,]
+TopGenes=Top[,1]
 write.table(TopGenes,BestGenesFile,col.names=FALSE,row.names=FALSE,quote=FALSE)
 
 AllDone=TRUE
