@@ -31,7 +31,7 @@ for (chr in 1:22) {
 	cmd=sprintf("plink --bfile %s --extract %s --indep-pairwise 50 5 0.5 --out toprune",
 		PlinkRoot,SNPsFile)
 	system(cmd)
-	cmd=sprintf("plink --bfile %s --extract toprune.prune.in --out %s --make-bed ",
+	cmd=sprintf("plink --bfile %s --extract toprune.prune.in --recode A --out %s --make-bed ",
 		PlinkRoot,PlinkOutRoot)
 	system(cmd)
 	if (chr!=1) {
