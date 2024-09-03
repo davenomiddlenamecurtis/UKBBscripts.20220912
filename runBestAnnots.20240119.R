@@ -22,7 +22,7 @@ Summary=data.frame(read.table(SummFile,header=TRUE,sep="\t",stringsAsFactors=FAL
 Summary$MaxMLP=apply(Summary[,2:ncol(Summary)], 1, max)# create new column
 Summary=Summary[order(Summary$MaxMLP,decreasing=TRUE),]
 Top=Summary[1:NumBest,]
-TopGenes=Top[1,]
+TopGenes=Top[,1]
 write.table(TopGenes,BestGenesFile,col.names=FALSE,row.names=FALSE,quote=FALSE)
 
 AllDone=TRUE

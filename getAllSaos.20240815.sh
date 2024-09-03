@@ -1,6 +1,11 @@
-#!/bin/bash 
+#!/bin/bash
 set -x
 # get scores for all genes in a list using a model and file list of extra needed files
+# the scores are no longer downloaded but will be left in a suitable directory
+# the sao file will be downloaded
+# if the arg file runs tests then the sao file will contain the results
+# the scores file can subsequently be used for tests
+# note that there is a risk that multiple score files with the same name may be produced if script is rerun
 
 if [ .%1 == . ]
 then
@@ -20,9 +25,9 @@ mkdir /cluster/project9/bipolargenomes/UKBB/$testName
 mkdir $resultsDir
 mkdir $failedDir
 
-if [ ! -e $resultsDir/$testName.scoresSoFar.txt ]
+if [ ! -e $resultsDir/$testName.saosSoFar.txt ]
 then
-	echo GenesWithScores > $resultsDir/$testName.scoresSoFar.txt
+	echo GenesWithSaos > $resultsDir/$testName.saosSoFar.txt
 fi
 
 if [ ! -e $failedDir/$testName.failedSoFar.txt ]
@@ -39,26 +44,18 @@ dx mkdir /results/$testName/failed/
 
 dx cd /results/$testName/geneResults/
 dx ls  > $testName.onDx.txt
-grep '.sco' $testName.onDx.txt | while read f
-do
-	dx download $f -f
-	if [ -e $f -a -s $f ]
-	then
-		g=${f%.sco}
-		h=${g##*.}
-		echo $h >> $testName.scoresSoFar.txt
-		dx rm $f
-	fi
-done
-# this will only work if the gva output files are named as expected
 grep '.sao' $testName.onDx.txt | while read f
 do
 	dx download $f -f
 	if [ -e $f -a -s $f ]
 	then
+		g=${f%.sao}
+		h=${g##*.}
+		echo $h >> $testName.saosSoFar.txt
 		dx rm $f
 	fi
 done
+# this will only work if the gva output files are named as expected
 cd $failedDir
 dx cd /results/$testName/failed
 dx ls  > $testName.onDx.txt
@@ -74,7 +71,7 @@ do
 done
 popd
 
-cat $geneList | grep -w -v -f $resultsDir/$testName.scoresSoFar.txt | grep -w -v -f $failedDir/$testName.failedSoFar.txt >$testName.leftToDo.txt
+cat $geneList | grep -w -v -f $resultsDir/$testName.saosSoFar.txt | grep -w -v -f $failedDir/$testName.failedSoFar.txt >$testName.leftToDo.txt
 
 for chr in $allChrs 
 do
@@ -95,4 +92,4 @@ do
 done 
 
 # invoke with e.g. 
-# bash ~/UKBB/RAP/scripts/getAllScores.20230816.sh UKBB.HT.20230807 HT.genes.20230816.txt for.UKBB.HT.20230816.lst
+# bash ~/UKBB/RAP/scripts/getAllSaos.20230816.sh UKBB.HT.20230807 HT.genes.20230816.txt for.UKBB.HT.20230816.lst

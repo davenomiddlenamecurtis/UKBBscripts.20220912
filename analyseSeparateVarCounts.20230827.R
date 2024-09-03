@@ -6,7 +6,7 @@ gene="ATP1A2"
 model="UKBB.migraine.separateVarCounts.20211015"
 model="UKBB.psoriasis.separateVarCounts.20230329" 
 gene="NPC1L1"
-
+args=c("UKBB.T2D.separateVarCounts.20231006","TCF7L2")
 args = commandArgs(trailingOnly=TRUE)
 # args=c("UKBB.HT.separateVarCounts.20230825","DNMT3A")
 if (length(args)!=2) {
@@ -148,12 +148,12 @@ tStats
 corrs=data.frame(matrix(nrow=21,ncol=nVarTypes))
 MLPs=data.frame(matrix(nrow=21,ncol=nVarTypes))
 colnames(corrs)=types
-rownames(corrs)=colnames(allData)[(nVarTypes+5):(nVarTypes+25)]
+rownames(corrs)=colnames(allData)[(nVarTypes+4):(nVarTypes+24)]
 colnames(MLPs)=types
-rownames(MLPs)=colnames(allData)[(nVarTypes+5):(nVarTypes+25)]
+rownames(MLPs)=colnames(allData)[(nVarTypes+4):(nVarTypes+24)]
 for (v in 1:nVarTypes) {
   for (p in 1:21) {
-    c=cor.test(allData[,v+3],allData[,nVarTypes+3+p])
+    c=cor.test(allData[,v+2],allData[,nVarTypes+2+p])
     corrs[p,v]=c$estimate
     MLPs[p,v]=-log10(max(c$p.value,2.2e-16))
   }
@@ -163,7 +163,7 @@ MLPs
 
 corrTableFile=sprintf("analyseVarTypes.corrs.%s.txt",gene)
 MLPTableFile=sprintf("analyseVarTypes.MLPs.%s.txt",gene)
-write.table(corrs,corrTableFile)
-write.table(MLPs,MLPTableFile)
+write.table(corrs,corrTableFile,quote=FALSE,sep="\t")
+write.table(MLPs,MLPTableFile,quote=FALSE,sep="\t")
 
 

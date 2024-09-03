@@ -1,0 +1,17 @@
+F30	F30 Manic episode	Yes	28940	790
+F300	F30.0 Hypomania	Yes	28950	28940
+F301	F30.1 Mania without psychotic symptoms	Yes	28960	28940
+F302	F30.2 Mania with psychotic symptoms	Yes	28970	28940
+F308	F30.8 Other manic episodes	Yes	28980	28940
+F309	F30.9 Manic episode, unspecified	Yes	28990	28940
+F31	F31 Bipolar affective disorder	Yes	29000	790
+F310	F31.0 Bipolar affective disorder, current episode hypomanic	Yes	29010	29000
+F311	F31.1 Bipolar affective disorder, current episode manic without psychotic symptoms	Yes	29020	29000
+F312	F31.2 Bipolar affective disorder, current episode manic with psychotic symptoms	Yes	29030	29000
+F313	F31.3 Bipolar affective disorder, current episode mild or moderate depression	Yes	29040	29000
+F314	F31.4 Bipolar affective disorder, current episode severe depression without psychotic symptoms	Yes	29050	29000
+F315	F31.5 Bipolar affective disorder, current episode severe depression with psychotic symptoms	Yes	29060	29000
+F316	F31.6 Bipolar affective disorder, current episode mixed	Yes	29070	29000
+F317	F31.7 Bipolar affective disorder, currently in remission	Yes	29080	29000
+F318	F31.8 Other bipolar affective disorders	Yes	29090	29000
+F319	F31.9 Bipolar affective disorder, unspecified	Yes	29100	29000

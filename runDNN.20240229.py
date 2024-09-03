@@ -17,7 +17,7 @@ import pandas as pd
 # import matplotlib.pyplot as plt # DC not using
 # from sklearn.decomposition import PCA
 # from sklearn.linear_model import LogisticRegression
-# from sklearn import metrics
+from sklearn import metrics
 from math import sqrt
 import multiprocessing
 from multiprocessing import Pool
@@ -29,15 +29,19 @@ import os
 # DC changed as below os.environ["CUDA_VISIBLE_DEVICES"]="1"
 # https://stackoverflow.com/questions/70106418/how-can-i-run-tensorflow-without-gpu
 os.environ["CUDA_VISIBLE_DEVICES"]="-1"
-# I may not have needed this because in fact problem was low RAM
+# DC I may not have needed this because in fact problem was low RAM
 
-PlinkRoot="bestSNPs.HT.20240310.small"
+PlinkRoot="bestSNPs.HT.20240312"
 (bim,fam,bed)=read_plink(PlinkRoot)
 Yd=fam[['iid','trait']].astype('uint8')
 # unlike the original code, I rely on all the subjects in the fam file having phenotypes so no need to get ids variable and sort genotypes with it
 Yd['iid']=range(Yd.shape[0])
-ids=list(set(Yd["iid"]))
+ids=list(set(Yd['iid']))
 Yd=Yd.set_index('iid').loc[ids].values
+# DC above line changes type of Yd from class 'pandas.core.frame.DataFrame' to class 'numpy.ndarray'
+# and then it only has one column plus an index
+
+Yd=Yd-1
 
 print("Conversion")
 bed=bed.astype('uint8')
@@ -62,8 +66,11 @@ assert x_test.shape[0]==y_test.shape[0]
 tf.compat.v1.reset_default_graph()
 # X=tf.placeholder(tf.float32,shape=(None,x_train.shape[1]+1),name="X")
 # DC I do not know what the +1 was for  - gave an error
-X=tf.placeholder(tf.float32,shape=(None,x_train.shape[1]),name="X")
-Y=tf.placeholder(tf.float32,shape=(None,1),name="Y")
+# X=tf.placeholder(tf.float32,shape=(None,x_train.shape[1]),name="X")
+# Y=tf.placeholder(tf.float32,shape=(None,1),name="Y")
+# DC I had negative losses so I will see if this helps:
+X=tf.placeholder(tf.float64,shape=(None,x_train.shape[1]),name="X")
+Y=tf.placeholder(tf.float64,shape=(None,1),name="Y")
 
 
 with tf.name_scope("dnn"):
@@ -117,6 +124,8 @@ size_big_batch=60000
 size_big_val_test=35000
 saver=tf.train.Saver()
 scores_test=[]
+pheno_id=0
+
 try:
     sess.close()
 except:
@@ -145,13 +154,15 @@ for epoch in range(30):
         y_train_big=y_train[size_big_batch*i:size_big_batch*(i+1):]
         for x_batch,y_batch in shuffle_batch(x_train_big, y_train_big, batch_size):
             loc.run()
-            sess.run(training_op,feed_dict={X:x_batch,Y:np.array([y_batch[:,"trait"]]).T,training:True})
+            sess.run(training_op,feed_dict={X:x_batch,Y:np.array([y_batch[:,pheno_id]]).T,training:True})
 # got this error:  Cannot feed value of shape (513, 5523) for Tensor 'X:0', which has shape '(?, 5524)'
+# before I removed "+1" from following line:
+# X=tf.placeholder(tf.float32,shape=(None,x_train.shape[1]+1),name="X")
             print("%d ITERATION:%d/%d "%(epoch,iteration,len(x_train)//batch_size),end='\r')
             iteration+=1
         del x_train_big
     loc.run()
-    loss_train=sess.run(loss,feed_dict={X:x_batch,Y:np.array([y_batch[:,"trait"]]).T,training:False})
+    loss_train=sess.run(loss,feed_dict={X:x_batch,Y:np.array([y_batch[:,pheno_id]]).T,training:False})
     print(epoch,"Train Loss:",loss_train)
     epoch_tab.append(epoch)
     loss_tab.append(loss_train)
@@ -164,7 +175,7 @@ for epoch in range(30):
         y_val_big=y_val[size_big_val_test*j:size_big_val_test*(j+1),:]
         for i in range(x_val_big.shape[0]//batch_size+1):
             x_batch_val=x_val_big[i*batch_size:(i+1)*batch_size]
-            loss_val_loc,predicted_val_loc=sess.run([error,predicted],feed_dict={X:x_batch_val,Y:np.array([y_val_big[i*batch_size:(i+1)*batch_size,"trait"]]).T,training:False})
+            loss_val_loc,predicted_val_loc=sess.run([error,predicted],feed_dict={X:x_batch_val,Y:np.array([y_val_big[i*batch_size:(i+1)*batch_size,pheno_id]]).T,training:False})
             predicted_values.append(predicted_val_loc)
             loss_values.append(loss_val_loc)
         del x_val_big
@@ -178,7 +189,35 @@ for epoch in range(30):
     print(epoch,"Loss:",loss_val)
     print("\n")
     
-    
+sess.close()
+sess = tf.InteractiveSession(config=tf.ConfigProto(device_count={ "CPU": 44}))
+saver.restore(sess, PlinkRoot+"_loss.ckpt")
+pred_test=[]
+size_big_val_test=35000
+for j in range(x_test.shape[0]//size_big_val_test+1):
+    loc.run()
+    x_test_big=x_test[size_big_val_test*j:size_big_val_test*(j+1),:].compute()
+    x_test_big[np.isnan(x_test_big)]=2
+    y_test_big=y_test[size_big_val_test*j:size_big_val_test*(j+1),:]
+    for i in range(x_test_big.shape[0]//batch_size+1):
+        x_batch_test=x_test_big[i*batch_size:(i+1)*batch_size]
+        predicted_loc=sess.run(predicted,feed_dict={X:x_batch_test,Y:np.array([y_test_big[i*batch_size:(i+1)*batch_size,0]]).T,training:False})
+        pred_test.append(predicted_loc)
+    del x_test_big
+
+from sklearn import metrics
+pred_test_v=np.concatenate(pred_test,axis=0)
+fpr, tpr, thresholds = metrics.roc_curve(y_test[:,pheno_id],pred_test_v, pos_label=1)
+precision, recall, thresholds = metrics.precision_recall_curve(y_test[:,pheno_id], pred_test_v, pos_label=1)
+scores_test.append([metrics.auc(fpr, tpr),metrics.auc(recall, precision),metrics.average_precision_score(y_test[:,pheno_id],pred_test_v)])
+end = time.time()
+print(end - start)
+   
+disease='trait'
+
+pd.DataFrame({disease:scores_test,}).to_csv(PlinkRoot+".score_test.csv")
+
+pd.DataFrame(pred_test_v).to_csv(PlinkRoot+".prediction_test.csv")
     
 
 

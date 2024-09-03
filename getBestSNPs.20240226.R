@@ -6,13 +6,13 @@
 SNPtemplate="/SAN/ugi/UGIbiobank/data/downloaded/ukb_cal_chr%d_v2"
 
 args = commandArgs(trailingOnly=TRUE)
-if (length(args)<1) {
-	print("Run with GWAS results file as first argument")
+if (length(args)<2) {
+	print("Run with GWAS results file as first argument and phenotype file as second argument, with optional threshold as third argument")
 	quit()
 }
 
-if (length(args)>1) {
-	threshold=as.numeric(args[2])
+if (length(args)>2) {
+	threshold=as.numeric(args[3])
 } else {
 	threshold=3
 }
@@ -39,8 +39,24 @@ for (chr in 1:22) {
 		system(cmd)
 	}
 }
+
 PlinkOutRoot=sprintf("%s.bestSNPs.%d",ResFile,1)
+
+PhenoFile=args[2]
+Phenos=data.frame(read.table(PhenoFile,header=FALSE,stringsAsFactors=FALSE,fill=TRUE)) # will work whether or not there is a header
+Phenos=Phenos[Phenos[,2]==0 | Phenos[,2]==1 ,]
+Phenos[,2]=as.numeric(Phenos[,2])+1
+FamFile=sprintf("%s.fam",PlinkOutRoot)
+Fam=data.frame(read.table(FamFile,header=FALSE,stringsAsFactors=FALSE))
+Phenos=Phenos[Phenos[,1] %in% Fam[,1],]
+ToWrite=Phenos
+ToWrite[,2]=Phenos[,1]
+ToWrite[,3]=Phenos[,2] # too lazy to find out how to do this properly
+PlinkPhenoFile=sprintf("%s.phenos.txt",PhenoFile,chr) # separate one for each chromosome so parallel jobs do not overwrite each other
+write.table(ToWrite,PlinkPhenoFile,col.names=FALSE,row.names=FALSE,quote=FALSE,sep="\t")
+
+
 PlinkOutAllRoot=sprintf("%s.bestSNPs.all",ResFile)
-cmd=sprintf("plink --bfile %s --merge-list mergelist.txt --out %s --make-bed",PlinkOutRoot,PlinkOutAllRoot)
+cmd=sprintf("plink --bfile %s --merge-list mergelist.txt --pheno %s --keep %s --out %s --make-bed",PlinkOutRoot,PlinkPhenoFile,PlinkPhenoFile,PlinkOutAllRoot)
 system(cmd)
 

@@ -10,7 +10,7 @@ if (length(args)<1) {
 }
 
 ResFile=args[1]
-results=data.frame(read.table(ResFile,header=TRUE,,stringsAsFactors=FALSE))
+results=data.frame(read.table(ResFile,header=TRUE,stringsAsFactors=FALSE,fill=TRUE))
 
 library(ggplot2)
 options(bitmapType='cairo')
@@ -43,7 +43,7 @@ results$MLP=-log10(as.numeric(results$P))
 		geom_hline(yintercept=0,size=1.0) +
 		geom_vline(xintercept=0,size=1.0) +
 		theme(panel.grid.major=element_line(colour = "black",size=0.25)) +
-		scale_x_continuous(breaks = seq(0,7,by =1),minor_breaks=NULL,limits=c(0,ceiling(top))) +
+		scale_x_continuous(breaks = seq(0,ceiling(max(eMLP)),by =1),minor_breaks=NULL,limits=c(0,ceiling(max(eMLP)))) +
 		scale_y_continuous(breaks = seq(0,ceiling(top),by =1),minor_breaks=NULL,limits=c(0,ceiling(top))) 
 	print(myplot)
 	dev.off()

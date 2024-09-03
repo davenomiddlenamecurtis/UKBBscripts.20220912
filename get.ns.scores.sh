@@ -1,0 +1,2 @@
+# get total nonsynonymous scores for variants in each gene
+cat /home/rejudcu/reference38/allGenes.20191018.onePCDHG.txt | while read g; do if [ -e /cluster/project9/bipolargenomes/UKBB/UKBB.migraine.annot.HPC.20231126/results/UKBB.migraine.annot.HPC.20231126.$g.sao ]; then echo $g `tail -n +3 /cluster/project9/bipolargenomes/UKBB/UKBB.migraine.annot.HPC.20231126/results/UKBB.migraine.annot.HPC.20231126.$g.sao | awk ' { if (NF>69) print $21 }' | paste -sd+ | bc` >> ns.scores.txt ; fi; done

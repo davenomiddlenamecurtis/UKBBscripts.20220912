@@ -3,19 +3,19 @@
 # script to take summary file, select most significant gene/annotation results
 # then run scoreassoc on second dataset with those pairs
 
-NumBest=100
-SummFile="/cluster/project9/bipolargenomes/UKBB/UKBB.depression.annot.20240208/UKBB.depression.annot.20240208.summ.txt"
-BestModel="UKBB.depression.forAnnot.20240208"
-BestGenesFile="depression.20240208.bestGenes.txt"
-TestsFile="/home/rejudcu/pars/UKBB.annot.allTests.20231126.txt"
-TopTestsFile="depression.topTests.240208.txt"
-NewModel="UKBB.depression.best.annot.20240208"
+NumBest=3
+SummFile="/home/rejudcu/UKBB/BP.20240814/genes/UKBB.BP.annot.20240814.summ.txt"
+BestModel="UKBB.BP.forAnnot.20240814"
+BestGenesFile="BP.20240814.bestGenes.txt"
+TestsFile="/home/rejudcu/UKBB/RAP/pars/UKBB.annot.allTests.20240815.txt"
+TopTestsFile="BP.topTests.20240814.txt"
+NewModel="UKBB.BP.best.annot.20240815"
 NewArgFile=sprintf("/home/rejudcu/pars/rsco.%s.rarg",NewModel)
 
-ScoreAssocCommand="subComm.sh /share/apps/R-3.6.1/bin/Rscript /home/rejudcu/scoreassoc/scoreassoc.R"
+DxCommand="dx cd / ; dx run swiss-army-knife -y --instance-type mem3_hdd2_v2_x4 -imount_inputs=FALSE -iin=/scripts/runScoreassoc.20240815.sh "
 
 
-wd="/home/rejudcu/UKBB/depression.20240208"
+wd="/home/rejudcu/UKBB/BP.20240814"
 setwd(wd)
 
 Summary=data.frame(read.table(SummFile,header=TRUE,sep="\t",stringsAsFactors=FALSE))
@@ -27,15 +27,15 @@ write.table(TopGenes,BestGenesFile,col.names=FALSE,row.names=FALSE,quote=FALSE)
 
 AllDone=TRUE
 for (gene in Top[,1]) {
-	ScoreFile=sprintf("/cluster/project9/bipolargenomes/UKBB/%s/results/%s.%s.sco",BestModel,BestModel,gene)
-	if (!file.exists(ScoreFile)) {
+	SaoFile=sprintf("/cluster/project9/bipolargenomes/UKBB/%s/results/%s.%s.sao",BestModel,BestModel,gene)
+	if (!file.exists(SaoFile)) {
 		AllDone=FALSE
 		break
 	}
 }
 
 if (!AllDone) {
-	cmd=sprintf("bash /home/rejudcu/UKBB/RAP/scripts/getAllScores.20240118.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
+	cmd=sprintf("bash /home/rejudcu/UKBB/RAP/scripts/getAllSaos.20240815.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
 	print("Command to run analyses on RAP:")
 	print(cmd)
 	print("Should be repeated until all analyses have run and results downloaded")
@@ -68,8 +68,9 @@ write.table(TopTests,TopTestsFile,col.names=TRUE,row.names=FALSE,quote=FALSE,sep
 TopTests=data.frame(read.table(TopTestsFile,header=TRUE,sep="\t",stringsAsFactors=FALSE))
 for (r in 1:nrow(TopTests)) {
 	gene=TopTests[r,1]
-	commStr=sprintf("%s --arg-file %s --gene %s --summaryoutputfile summ.%s.%s.txt --testfile %s",
-		ScoreAssocCommand,NewArgFile,gene,NewModel,gene,TopTests[r,2])
+	icmd=sprintf("bash runScoreassoc.20240815.sh %s for.%s.lst --gene %s --summaryoutputfile %s.%s.summ.txt --testfile %s",
+		NewModel,NewModel,gene,NewModel,gene,TopTests[r,2])
+	commStr=sprintf("%s -icmd=\"%s\"",DxCommand,icmd)
 	print(commStr)
 	system(commStr)
 }
