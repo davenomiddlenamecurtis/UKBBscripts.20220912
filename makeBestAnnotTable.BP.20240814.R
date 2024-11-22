@@ -7,7 +7,7 @@ NumBest=3
 SummFile="/home/rejudcu/UKBB/BP.20240814/genes/UKBB.BP.annot.20240814.summ.txt"
 BestModel="UKBB.BP.forAnnot.20240814"
 BestGenesFile="BP.20240814.bestGenes.txt"
-TestsFile="/home/rejudcu/UKBB/RAP/pars/UKBB.annot.allTests.20240815.txt"
+TestsFile="/home/rejudcu/UKBB/RAPfiles/pars/UKBB.annot.allTests.20240815.txt"
 TopTestsFile="BP.topTests.20240814.txt"
 NewModel="UKBB.BP.best.annot.20240815"
 NewArgFile=sprintf("/home/rejudcu/pars/rsco.%s.rarg",NewModel)
@@ -35,7 +35,7 @@ for (gene in Top[,1]) {
 }
 
 if (!AllDone) {
-	cmd=sprintf("bash /home/rejudcu/UKBB/RAP/scripts/getAllSaos.20240815.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
+	cmd=sprintf("bash /home/rejudcu/UKBB/RAPfiles/scripts/getAllSaos.20240815.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
 	print("Command to run analyses on RAP:")
 	print(cmd)
 	print("Should be repeated until all analyses have run and results downloaded")

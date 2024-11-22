@@ -76,7 +76,7 @@ cat $geneList | grep -w -v -f $resultsDir/$testName.saosSoFar.txt | grep -w -v -
 for chr in $allChrs 
 do
 	rm $testName.toDo.$chr.txt
-	grep -w -f ~/UKBB/RAP/reference38/AllGenes.$chr.txt $testName.leftToDo.txt > $testName.toDo.$chr.txt
+	grep -w -f ~/UKBB/RAPfiles/reference38/AllGenes.$chr.txt $testName.leftToDo.txt > $testName.toDo.$chr.txt
 done
 
 for chr in $allChrs 
@@ -92,4 +92,4 @@ do
 done 
 
 # invoke with e.g. 
-# bash ~/UKBB/RAP/scripts/getAllSaos.20230816.sh UKBB.HT.20230807 HT.genes.20230816.txt for.UKBB.HT.20230816.lst
+# bash ~/UKBB/RAPfiles/scripts/getAllSaos.20230816.sh UKBB.HT.20230807 HT.genes.20230816.txt for.UKBB.HT.20230816.lst

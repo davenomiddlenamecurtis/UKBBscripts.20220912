@@ -9,7 +9,7 @@ ver="forAnnot.20231109"
 
 PCsFile="/SAN/ugi/UGIbiobank/data/downloaded/ukb23155.common.all.eigenvec"
 sexFile="/home/rejudcu/UKBB/UKBB.sex.20201111.txt"
-vepAnnotFile="/home/rejudcu/UKBB/RAP/annot/ukb23158.AM.annot.vcf.gz"
+vepAnnotFile="/home/rejudcu/UKBB/RAPfiles/annot/ukb23158.AM.annot.vcf.gz"
 
 vepWeights=""
 vepTest=""

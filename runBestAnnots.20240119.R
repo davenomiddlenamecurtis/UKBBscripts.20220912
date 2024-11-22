@@ -35,7 +35,7 @@ for (gene in Top[,1]) {
 }
 
 if (!AllDone) {
-	cmd=sprintf("bash /home/rejudcu/UKBB/RAP/scripts/getAllScores.20240118.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
+	cmd=sprintf("bash /home/rejudcu/UKBB/RAPfiles/scripts/getAllScores.20240118.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
 	print("Command to run analyses on RAP:")
 	print(cmd)
 	print("Should be repeated until all analyses have run and results downloaded")

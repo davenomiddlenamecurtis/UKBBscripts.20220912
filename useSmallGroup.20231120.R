@@ -12,7 +12,7 @@ ver="forAnnot.20231112"
 PCsFile="/SAN/ugi/UGIbiobank/data/downloaded/ukb23158.common.all.20230806.eigenvec.txt"
 # sexFile="/home/rejudcu/UKBB/UKBB.sex.20201111.txt"
 sexFile="/home/rejudcu/UKBB/UKBB.sex.20230807.txt"
-vepAnnotFile="/home/rejudcu/UKBB/RAP/annot/ukb23158.AM.annot.vcf.gz"
+vepAnnotFile="/home/rejudcu/UKBB/RAPfiles/annot/ukb23158.AM.annot.vcf.gz"
 
 protectiveGenes=c("NPC1L1","PCSK9","ANGPTL3","APOC3","INPPL1","DBH")
 

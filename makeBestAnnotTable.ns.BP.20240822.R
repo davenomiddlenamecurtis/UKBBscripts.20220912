@@ -7,7 +7,7 @@ NumBest=100
 SummFile="/cluster/project9/bipolargenomes/UKBB/UKBB.BP.annot.ns.20240821/UKBB.BP.annot.ns.20240821.summ.txt"
 BestModel="UKBB.BP.forAnnot.20240814"
 BestGenesFile="BP.20240822.bestGenes.txt"
-TestsFile="/home/rejudcu/UKBB/RAP/pars/UKBB.annot.ns.allTests.20240822.txt"
+TestsFile="/home/rejudcu/UKBB/RAPfiles/pars/UKBB.annot.ns.allTests.20240822.txt"
 TopTestsFile="BP.topTests.20240822.txt"
 NewModel="UKBB.BP.best.annot.ns.20240822"
 bashScript="run.BP.best.annot.ns.20240822.sh"
@@ -36,7 +36,7 @@ for (gene in Top[,1]) {
 }
 
 if (!AllDone) {
-	cmd=sprintf("bash /home/rejudcu/UKBB/RAP/scripts/getAllSaos.20240815.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
+	cmd=sprintf("bash /home/rejudcu/UKBB/RAPfiles/scripts/getAllSaos.20240815.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
 	print("Command to run analyses on RAP:")
 	print(cmd)
 	print("Should be repeated until all analyses have run and results downloaded")
