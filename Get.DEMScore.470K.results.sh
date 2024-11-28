@@ -1,0 +1,3 @@
+Rscript scoreassoc.R --arg-file rsco.UKBB.DEMScore.470K.annot.20240904.rarg --gene TREM2 --lintestfile test.annot.CADD_raw_rankscore_hg19.withAPOE.tst --summaryoutputfile summ.UKBB.DEMScore.470K.annot.20240904.TREM2.txt
+Rscript scoreassoc.R --arg-file rsco.UKBB.DEMScore.470K.annot.20240904.rarg --gene SORL1 --lintestfile test.annot.AM_score.withAPOE.tst --summaryoutputfile summ.UKBB.DEMScore.470K.annot.20240904.SORL1.txt
+Rscript scoreassoc.R --arg-file rsco.UKBB.DEMScore.470K.annot.20240904.rarg --gene ABCA7 --lintestfile test.annot.LIST_S2_rankscore.withAPOE.tst --summaryoutputfile summ.UKBB.DEMScore.470K.annot.20240904.ABCA7.txt
