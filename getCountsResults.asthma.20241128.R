@@ -78,33 +78,39 @@ for (r in 1:nrow(Results)) {
 	test=Results[r,2]
 	SaoFile=sprintf("%s.%s.sao",CountsModel,gene)
 	SaoTable=na.omit(data.frame(read.table(SaoFile,header=TRUE,stringsAsFactors=FALSE,fill=TRUE)))
-	colnames(SaoTable)[14:22]=MainWeights
-	colnames(SaoTable)[23]="AM_prediction"
-	colnames(SaoTable)[24]="AM_score"
-	colnames(SaoTable)[25:(25+length(ExtraWeights)-1)]=ExtraWeights
+	colnames(SaoTable)[16:24]=MainWeights
+	colnames(SaoTable)[25]="AM_prediction"
+	colnames(SaoTable)[26]="AM_score"
+	colnames(SaoTable)[27:(27+length(ExtraWeights)-1)]=ExtraWeights
 	GlmTable=data.frame(read.table(SaoFile,header=TRUE,stringsAsFactors=FALSE,fill=TRUE))
 	First=which("L1"==GlmTable[,1])[[1]]
 	GlmTable=GlmTable[-First:-1,1:4]
 	colnames(GlmTable)=GlmTable[1,]
 	Cats=c(MainWeights[-1],test)
-	GeneResults=data.frame(matrix(ncol=6,nrow=length(Cats)))
-	colnames(GeneResults)=c("Category","NumVars","Carrier count","Carrier mean (SE)","Beta (SE)","Beta/SE")
+	GeneResults=data.frame(matrix(ncol=8,nrow=length(Cats),0))
+	colnames(GeneResults)=c("Category","NumVars","TotCountControls","MeanCountControls","TotCountCases","MeanCountCases","OR","SLP")
 	for (c in 1:length(Cats)) {
 		Cat=Cats[c]
 		GeneResults[c,1]=Cat
 		Tab=SaoTable[as.numeric(SaoTable[,Cat])!=0,]
-		Tab$contAB=as.numeric(Tab$contAB)
-		Tab$meanAB=as.numeric(Tab$meanAB)
-		GeneResults[c,2]=nrow(Tab)
-		GeneResults[c,3]=sum(Tab$contAB)
-		Tab$SigmaX=Tab$contAB*Tab$meanAB
-		Tab$SigmaX2=Tab$contAB*Tab$meanAB*Tab$meanAB
-		Mean=sum(Tab$SigmaX)/sum(Tab$contAB)
-		Var=(sum(Tab$SigmaX2)-sum(Tab$contAB)*Mean*Mean)/(sum(Tab$contAB)-1)
-		GeneResults[c,4]=sprintf("%.3f (%.3f)",Mean,sqrt(Var)/sqrt(sum(Tab$contAB)))
-		gr=which(Cat==GlmTable$beta)[[1]]
-		GeneResults[c,5]=sprintf("%.3f (%.3f)",as.numeric(GlmTable$value[gr]),as.numeric(GlmTable$SE[gr]))
-		GeneResults[c,6]=sprintf("%.2f",as.numeric(GlmTable$z[gr]))
+		for (cc in c(2,4,6,8,10,12)) {
+			Tab[,cc]=as.numeric(Tab[,cc])
+		}
+		GeneResults$NumVars[c]=nrow(Tab)
+		if (nrow(Tab)>0) {
+			GeneResults$TotCountControls[c]=sum(Tab$contAB)+2*sum(Tab$contBB)
+			GeneResults$MeanCountControls[c]=GeneResults$TotCountControls[c]/((sum(Tab$contAA)+sum(Tab$contAB)+sum(Tab$contBB))/nrow(Tab))
+			GeneResults$TotCountCases[c]=sum(Tab$caseAB)+2*sum(Tab$caseBB)
+			GeneResults$MeanCountCases[c]=GeneResults$TotCountCases[c]/((sum(Tab$caseAA)+sum(Tab$caseAB)+sum(Tab$caseBB))/nrow(Tab))
+			gr=which(Cat==GlmTable$beta)[[1]]
+			b=as.numeric(GlmTable$value[gr])
+			SE=as.numeric(GlmTable$SE[gr])
+			GeneResults$OR[c]=sprintf("%.2f (%.2f-%.2f)",exp(b),exp(b-2*SE),exp(b+2*SE))
+			GeneResults$SLP[c]=log10(2*pnorm(abs(as.numeric(GlmTable$z[gr])),lower.tail=FALSE))
+			if (b>0) {
+				GeneResults$SLP[c]=GeneResults$SLP[c]* -1
+			}
+		}
 	}
 	print(GeneResults)
 	GeneResults[1:length(CategoryNames),1]=CategoryNames

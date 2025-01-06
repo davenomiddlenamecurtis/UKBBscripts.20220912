@@ -143,6 +143,41 @@ for (r in 1:nrow(SummaryTable)) {
 SummaryTable$TestFile=gsub("/home/rejudcu/pars/","",SummaryTable$TestFile)
 write.table(SummaryTable,ResultsFile,col.names=TRUE,row.names=FALSE,quote=FALSE,sep="\t")
 
+for (ph in c("noEczema","withEczema")) {
+	gene="FLG"
+	for (r in 1:nrow(GenesToDo)) {
+		if (SummaryTable[r,1]==gene) {
+			break
+		}
+	}
+	SummFile=sprintf("summ.%s.%s.%s.txt",New470KModel,ph,gene)
+	if (file.exists(SummFile)) {
+		next
+	}
+	commStr=sprintf("%s --arg-file %s --gene %s --summaryoutputfile %s --testfile %s --IDphenotypefile  /home/rejudcu/UKBB/asthma.2024/UKBB.earlyAsthma.%s.txt --outputfilespec UKBB.%s.%s.GENE.rsao",
+		ScoreAssocCommand,New470KArgFile,gene,SummFile,GenesToDo[r,2],ph,New470KModel,ph)
+	print(commStr)
+	system(commStr)
+}
+
+
+for (ph in c("eczema")) {
+	gene="FLG"
+	for (r in 1:nrow(GenesToDo)) {
+		if (SummaryTable[r,1]==gene) {
+			break
+		}
+	}
+	SummFile=sprintf("summ.%s.%s.txt",ph,gene)
+	if (file.exists(SummFile)) {
+		next
+	}
+	commStr=sprintf("%s --arg-file %s --gene %s --summaryoutputfile %s --testfile %s --IDphenotypefile  /home/rejudcu/UKBB/asthma.2024/UKBB.%s.txt --outputfilespec UKBB.%s.GENE.rsao",
+		ScoreAssocCommand,New470KArgFile,gene,SummFile,GenesToDo[r,2],ph,ph)
+	print(commStr)
+	system(commStr)
+}
+
 
 
 

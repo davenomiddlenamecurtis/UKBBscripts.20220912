@@ -7,7 +7,7 @@ PCsFile="/SAN/ugi/UGIbiobank/data/downloaded/ukb23158.common.all.20230806.eigenv
 
 args = commandArgs(trailingOnly=TRUE)
 if (length(args)<2) {
-	args=c("UKBB.HT.txt","22")
+	args=c("UKBB.HT.WB.txt","22")
 }
 PhenoFile=args[1]
 chr=as.numeric(args[2])
@@ -21,7 +21,7 @@ Phenos=Phenos[Phenos[,1] %in% Fam[,1],]
 ToWrite=Phenos
 ToWrite[,2]=Phenos[,1]
 ToWrite[,3]=Phenos[,2] # too lazy to find out how to do this properly
-# all this is a waste of time if using plink2, which only wants one column
+# this is still needed if using plink2, which only wants one column, because then FID is assumed to be 0
 PlinkPhenoFile=sprintf("%s.phenos.%d.txt",PhenoFile,chr) # separate one for each chromosome so parallel jobs do not overwrite each other
 write.table(ToWrite,PlinkPhenoFile,col.names=FALSE,row.names=FALSE,quote=FALSE,sep="\t")
 
