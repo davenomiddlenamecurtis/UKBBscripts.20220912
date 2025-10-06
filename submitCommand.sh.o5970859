@@ -1,0 +1,885 @@
+++ echo running ./bashrc
+++ '[' -f /etc/bashrc ']'
+++ . /etc/bashrc
++++ '[' '' ']'
++++ shopt -q login_shell
+++ PATH=/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64
+++ PATH=/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64
+++ PATH=/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64
+++ PATH=/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64
+++ PATH=/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64
+++ PATH=/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ export PATH=/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ export LD_LIBRARY_PATH=/opt/gridengine/lib/lx-amd64:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs
+++ LD_LIBRARY_PATH=/opt/gridengine/lib/lx-amd64:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs
+++ [[ hxB = *i* ]]
+++ [[ '' = yes ]]
++ PATH=/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin
++ export PATH
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ echo KMP_DEVICE_THREAD_LIMIT =
+KMP_DEVICE_THREAD_LIMIT =
++ echo KMP_ALL_THREADS =
+KMP_ALL_THREADS =
++ echo KMP_TEAMS_THREAD_LIMIT =
+KMP_TEAMS_THREAD_LIMIT =
++ echo OMP_THREAD_LIMIT = 1
+OMP_THREAD_LIMIT = 1
++ echo OMP_NUM_THREADS = 1
+OMP_NUM_THREADS = 1
++ export READALLBASHRC=yes
++ READALLBASHRC=yes
++ echo sourcing /home/rejudcu/.bashrc
+sourcing /home/rejudcu/.bashrc
++ source /home/rejudcu/.bashrc
+++ set -x
+++ echo running ./bashrc
+++ '[' -f /etc/bashrc ']'
+++ . /etc/bashrc
++++ '[' '' ']'
++++ shopt -q login_shell
+++ PATH=/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin
+++ PATH=/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin
+++ PATH=/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin
+++ PATH=/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64
+++ PATH=/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64
+++ PATH=/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ export PATH=/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ export LD_LIBRARY_PATH=/opt/gridengine/lib/lx-amd64:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs
+++ LD_LIBRARY_PATH=/opt/gridengine/lib/lx-amd64:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs
+++ [[ hxB = *i* ]]
+++ [[ yes = yes ]]
+++ PATH=/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ export JAVA_HOME=/share/apps/jdk1.7.0_21/jre
+++ JAVA_HOME=/share/apps/jdk1.7.0_21/jre
+++ export KNOME=/SAN/biomed/biomed4/Knome/wo192
+++ KNOME=/SAN/biomed/biomed4/Knome/wo192
+++ export GATK_HOME=/cluster/project8/vyp/vincent/Software/GenomeAnalysisTK-3.3-0
+++ GATK_HOME=/cluster/project8/vyp/vincent/Software/GenomeAnalysisTK-3.3-0
+++ export SAMTOOLS_HOME=/share/apps/genomics/samtools-0.1.19
+++ SAMTOOLS_HOME=/share/apps/genomics/samtools-0.1.19
+++ export BPINGEST=/goon2/project99/bipolargenomes_raw/ingest
+++ BPINGEST=/goon2/project99/bipolargenomes_raw/ingest
+++ export BPGENOMES_HOME=/cluster/project8/bipolargenomes/
+++ BPGENOMES_HOME=/cluster/project8/bipolargenomes/
+++ export PROJECTDIR=/cluster/project9/bipolargenomes
+++ PROJECTDIR=/cluster/project9/bipolargenomes
+++ export UCLEXDIR=/SAN/vyplab/UCLex_raw/dave
+++ UCLEXDIR=/SAN/vyplab/UCLex_raw/dave
+++ export GHP_DIR=/home/rejudcu/ghp
+++ GHP_DIR=/home/rejudcu/ghp
+++ export R=/share/apps/R-3.6.1/bin/R
+++ R=/share/apps/R-3.6.1/bin/R
+++ export Rscript=/share/apps/R-3.6.1/bin/Rscript
+++ Rscript=/share/apps/R-3.6.1/bin/Rscript
+++ export 'RUNVEP=perl /share/ref/VEP/ensembl-tools-release-87/scripts/variant_effect_predictor/variant_effect_predictor.pl --cache --dir /share/ref/VEP/Cache --merged --port 3337 --force_overwrite --sift b --polyphen b'
+++ RUNVEP='perl /share/ref/VEP/ensembl-tools-release-87/scripts/variant_effect_predictor/variant_effect_predictor.pl --cache --dir /share/ref/VEP/Cache --merged --port 3337 --force_overwrite --sift b --polyphen b'
+++ export 'RUNVEP=perl /cluster/project9/bipolargenomes/vep/ensembl-vep/vep --cache --dir /cluster/project9/bipolargenomes/vep/Cache97 --merged --port 3337 --force_overwrite --sift b --polyphen b'
+++ RUNVEP='perl /cluster/project9/bipolargenomes/vep/ensembl-vep/vep --cache --dir /cluster/project9/bipolargenomes/vep/Cache97 --merged --port 3337 --force_overwrite --sift b --polyphen b'
+++ export PATH=/home/rejudcu/perl5/bin:/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/home/rejudcu/perl5/bin:/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ export PATH=/home/rejudcu/.local/bin:/home/rejudcu/perl5/bin:/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ PATH=/home/rejudcu/.local/bin:/home/rejudcu/perl5/bin:/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
+++ alias 'qclear=qstat | while read a b ; do qmod -c $a; done'
+++ alias q=qstat
+++ alias 'newc=scl enable devtoolset-3 bash'
+++ unalias -- --color
+/home/rejudcu/.bashrc: line 66: unalias: --color: not found
+++ unalias grep
+++ unalias egrep
+++ unalias fgrep
+++ unalias l.
+/home/rejudcu/.bashrc: line 70: unalias: l.: not found
+++ unalias ll
+/home/rejudcu/.bashrc: line 71: unalias: ll: not found
+++ unalias llc
+/home/rejudcu/.bashrc: line 72: unalias: llc: not found
+++ unalias lsc
+/home/rejudcu/.bashrc: line 73: unalias: lsc: not found
+++ alias h=history
+++ alias 'll=ls -lrt'
+++ export LD_LIBRARY_PATH=/opt/gridengine/lib/lx-amd64:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.9.5-shared/lib
+++ LD_LIBRARY_PATH=/opt/gridengine/lib/lx-amd64:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.9.5-shared/lib
+++ source /share/apps/source_files/python/python-3.9.5.source
++++ export PATH=/share/apps/python-3.9.5-shared/bin:/home/rejudcu/.local/bin:/home/rejudcu/perl5/bin:/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
++++ PATH=/share/apps/python-3.9.5-shared/bin:/home/rejudcu/.local/bin:/home/rejudcu/perl5/bin:/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989
++++ export LD_LIBRARY_PATH=/share/apps/python-3.9.5-shared/lib:/opt/gridengine/lib/lx-amd64:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.9.5-shared/lib
++++ LD_LIBRARY_PATH=/share/apps/python-3.9.5-shared/lib:/opt/gridengine/lib/lx-amd64:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.6.4-shared/lib:/home/rejudcu/gperftools/.libs:/share/apps/python-3.9.5-shared/lib
+++ export -f dxupload
+++ export -f dxdownload
++++ register-python-argcomplete dx
++++ sed 's/-o default//'
+++ eval '#compdef dx
+# Run something, muting output or redirecting it to the debug stream
+# depending on the value of _ARC_DEBUG.
+# If ARGCOMPLETE_USE_TEMPFILES is set, use tempfiles for IPC.
+__python_argcomplete_run() {
+    if [[ -z "${ARGCOMPLETE_USE_TEMPFILES-}" ]]; then
+        __python_argcomplete_run_inner "$@"
+        return
+    fi
+    local tmpfile="$(mktemp)"
+    _ARGCOMPLETE_STDOUT_FILENAME="$tmpfile" __python_argcomplete_run_inner "$@"
+    local code=$?
+    cat "$tmpfile"
+    rm "$tmpfile"
+    return $code
+}
+
+__python_argcomplete_run_inner() {
+    if [[ -z "${_ARC_DEBUG-}" ]]; then
+        "$@" 8>&1 9>&2 1>/dev/null 2>&1 </dev/null
+    else
+        "$@" 8>&1 9>&2 1>&9 2>&1 </dev/null
+    fi
+}
+
+_python_argcomplete() {
+    local IFS=$'\''\013'\''
+    local script=""
+    if [[ -n "${ZSH_VERSION-}" ]]; then
+        local completions
+        completions=($(IFS="$IFS" \
+            COMP_LINE="$BUFFER" \
+            COMP_POINT="$CURSOR" \
+            _ARGCOMPLETE=1 \
+            _ARGCOMPLETE_SHELL="zsh" \
+            _ARGCOMPLETE_SUPPRESS_SPACE=1 \
+            __python_argcomplete_run ${script:-${words[1]}}))
+        local nosort=()
+        local nospace=()
+        if is-at-least 5.8; then
+            nosort=(-o nosort)
+        fi
+        if [[ "${completions-}" =~ ([^\\]): && "${match[1]}" =~ [=/:] ]]; then
+            nospace=(-S '\'''\'')
+        fi
+        _describe "${words[1]}" completions "${nosort[@]}" "${nospace[@]}"
+    else
+        local SUPPRESS_SPACE=0
+        if compopt +o nospace 2> /dev/null; then
+            SUPPRESS_SPACE=1
+        fi
+        COMPREPLY=($(IFS="$IFS" \
+            COMP_LINE="$COMP_LINE" \
+            COMP_POINT="$COMP_POINT" \
+            COMP_TYPE="$COMP_TYPE" \
+            _ARGCOMPLETE_COMP_WORDBREAKS="$COMP_WORDBREAKS" \
+            _ARGCOMPLETE=1 \
+            _ARGCOMPLETE_SHELL="bash" \
+            _ARGCOMPLETE_SUPPRESS_SPACE=$SUPPRESS_SPACE \
+            __python_argcomplete_run ${script:-$1}))
+        if [[ $? != 0 ]]; then
+            unset COMPREPLY
+        elif [[ $SUPPRESS_SPACE == 1 ]] && [[ "${COMPREPLY-}" =~ [=/:]$ ]]; then
+            compopt -o nospace
+        fi
+    fi
+}
+if [[ -z "${ZSH_VERSION-}" ]]; then
+    complete -o nospace  -o bashdefault -F _python_argcomplete dx
+else
+    # When called by the Zsh completion system, this will end with
+    # "loadautofunc" when initially autoloaded and "shfunc" later on, otherwise,
+    # the script was "eval"-ed so use "compdef" to register it with the
+    # completion system
+    autoload is-at-least
+    if [[ $zsh_eval_context == *func ]]; then
+        _python_argcomplete "$@"
+    else
+        compdef _python_argcomplete dx
+    fi
+fi'
++++ [[ -z '' ]]
++++ complete -o nospace -o bashdefault -F _python_argcomplete dx
+++ export PATH=/share/apps/python-3.9.5-shared/bin:/home/rejudcu/.local/bin:/home/rejudcu/perl5/bin:/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/miniconda3/bin
+++ PATH=/share/apps/python-3.9.5-shared/bin:/home/rejudcu/.local/bin:/home/rejudcu/perl5/bin:/share/apps/jdk1.7.0_45/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/share/apps/genomics/plink-1.9:/share/apps/genomics/htslib-1.14/bin:/share/apps/genomics/bcftools-1.3.1/bin:/share/apps/java/bin:/share/apps/perl/bin:/share/ref/ensemble-tools-release-87/scripts/variant_effect_predictor/htslib:/share/apps/genomics/anaconda2/bin:/home/rejudcu/dbGaP/sratoolkit.2.8.2-1-centos_linux64/bin:/share/apps/shapeit.v2.r778.static:/share/apps/samtools-0.1.19/bin/:/home/rejudcu/scoreassoc/bin:/home/rejudcu/scripts:/home/rejudcu/geneVarAssoc/bin:/home/rejudcu/bin:/tmp/5970859.1.cpu.q:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ganglia/bin:/opt/ganglia/sbin:/opt/rocks/bin:/opt/rocks/sbin:/opt/gridengine/bin/lx-amd64:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/bin:/home/rejudcu/pseq/plinkseq-0.08-x86_64:/share/apps/genomics/ascp-3.5.4.102989:/home/rejudcu/miniconda3/bin
+++ set +x
+setting PATH
+Thu 18 Sep 15:09:57 BST 2025
+running on fry-611-201.local
+              total        used        free      shared  buff/cache   available
+Mem:       16225200      489424     4851580      592456    10884196    14806856
+Swap:       1023996      532492      491504
+Will run this command:
+eval bash removeSubjects.20250918.sh
+grep: doNotUse.20250918.txt: No such file or directory
+grep: doNotUse.20250918.txt: No such file or directory
+grep: doNotUse.20250918.txt: No such file or directory
+grep: doNotUse.20250918.txt: No such file or directory
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_efe_allchr_s49953.20250918.log.
+Options in effect:
+  --bed ukb_efe_chr1_v1.bed
+  --bim ukb_fe_exm_chrall_v1.bim
+  --fam ukb51119_efe_chr1_v1_s49953.fam
+  --make-bed
+  --out ukb51119_efe_allchr_s49953.20250918
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+8959608 variants loaded from .bim file.
+49960 people (22672 males, 27230 females, 58 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_efe_allchr_s49953.20250918.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.1.log.
+Options in effect:
+  --bed ukb_cal_chr1_v2.bed
+  --bim ukb_snp_chr1_v2.bim
+  --fam ukb51119_cal_chr1_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.1
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+63487 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.1.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c1_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c1_b0_v2.bgen
+  --out ukb22438_c1_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c1_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.2.log.
+Options in effect:
+  --bed ukb_cal_chr2_v2.bed
+  --bim ukb_snp_chr2_v2.bim
+  --fam ukb51119_cal_chr2_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.2
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+61966 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.2.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c2_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c2_b0_v2.bgen
+  --out ukb22438_c2_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c2_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.3.log.
+Options in effect:
+  --bed ukb_cal_chr3_v2.bed
+  --bim ukb_snp_chr3_v2.bim
+  --fam ukb51119_cal_chr3_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.3
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+52300 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.3.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c3_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c3_b0_v2.bgen
+  --out ukb22438_c3_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c3_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.4.log.
+Options in effect:
+  --bed ukb_cal_chr4_v2.bed
+  --bim ukb_snp_chr4_v2.bim
+  --fam ukb51119_cal_chr4_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.4
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+47443 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.4.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c4_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c4_b0_v2.bgen
+  --out ukb22438_c4_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c4_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.5.log.
+Options in effect:
+  --bed ukb_cal_chr5_v2.bed
+  --bim ukb_snp_chr5_v2.bim
+  --fam ukb51119_cal_chr5_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.5
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+46314 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.5.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c5_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c5_b0_v2.bgen
+  --out ukb22438_c5_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c5_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.6.log.
+Options in effect:
+  --bed ukb_cal_chr6_v2.bed
+  --bim ukb_snp_chr6_v2.bim
+  --fam ukb51119_cal_chr6_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.6
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+53695 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.6.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c6_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c6_b0_v2.bgen
+  --out ukb22438_c6_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c6_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.7.log.
+Options in effect:
+  --bed ukb_cal_chr7_v2.bed
+  --bim ukb_snp_chr7_v2.bim
+  --fam ukb51119_cal_chr7_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.7
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+42722 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.7.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c7_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c7_b0_v2.bgen
+  --out ukb22438_c7_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c7_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.8.log.
+Options in effect:
+  --bed ukb_cal_chr8_v2.bed
+  --bim ukb_snp_chr8_v2.bim
+  --fam ukb51119_cal_chr8_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.8
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+38591 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.8.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c8_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c8_b0_v2.bgen
+  --out ukb22438_c8_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c8_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.9.log.
+Options in effect:
+  --bed ukb_cal_chr9_v2.bed
+  --bim ukb_snp_chr9_v2.bim
+  --fam ukb51119_cal_chr9_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.9
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+34310 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.9.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c9_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c9_b0_v2.bgen
+  --out ukb22438_c9_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c9_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.10.log.
+Options in effect:
+  --bed ukb_cal_chr10_v2.bed
+  --bim ukb_snp_chr10_v2.bim
+  --fam ukb51119_cal_chr10_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.10
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+38308 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.10.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c10_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c10_b0_v2.bgen
+  --out ukb22438_c10_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c10_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.11.log.
+Options in effect:
+  --bed ukb_cal_chr11_v2.bed
+  --bim ukb_snp_chr11_v2.bim
+  --fam ukb51119_cal_chr11_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.11
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+40824 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.11.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c11_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c11_b0_v2.bgen
+  --out ukb22438_c11_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c11_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.12.log.
+Options in effect:
+  --bed ukb_cal_chr12_v2.bed
+  --bim ukb_snp_chr12_v2.bim
+  --fam ukb51119_cal_chr12_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.12
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+37302 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.12.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c12_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c12_b0_v2.bgen
+  --out ukb22438_c12_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c12_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.13.log.
+Options in effect:
+  --bed ukb_cal_chr13_v2.bed
+  --bim ukb_snp_chr13_v2.bim
+  --fam ukb51119_cal_chr13_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.13
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+26806 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.13.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c13_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c13_b0_v2.bgen
+  --out ukb22438_c13_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c13_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.14.log.
+Options in effect:
+  --bed ukb_cal_chr14_v2.bed
+  --bim ukb_snp_chr14_v2.bim
+  --fam ukb51119_cal_chr14_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.14
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+25509 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.14.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c14_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c14_b0_v2.bgen
+  --out ukb22438_c14_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c14_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.15.log.
+Options in effect:
+  --bed ukb_cal_chr15_v2.bed
+  --bim ukb_snp_chr15_v2.bim
+  --fam ukb51119_cal_chr15_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.15
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+24467 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.15.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c15_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c15_b0_v2.bgen
+  --out ukb22438_c15_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c15_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.16.log.
+Options in effect:
+  --bed ukb_cal_chr16_v2.bed
+  --bim ukb_snp_chr16_v2.bim
+  --fam ukb51119_cal_chr16_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.16
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+28960 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.16.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c16_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c16_b0_v2.bgen
+  --out ukb22438_c16_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c16_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.17.log.
+Options in effect:
+  --bed ukb_cal_chr17_v2.bed
+  --bim ukb_snp_chr17_v2.bim
+  --fam ukb51119_cal_chr17_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.17
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+28835 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.17.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c17_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c17_b0_v2.bgen
+  --out ukb22438_c17_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c17_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.18.log.
+Options in effect:
+  --bed ukb_cal_chr18_v2.bed
+  --bim ukb_snp_chr18_v2.bim
+  --fam ukb51119_cal_chr18_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.18
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+21962 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.18.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c18_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c18_b0_v2.bgen
+  --out ukb22438_c18_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c18_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.19.log.
+Options in effect:
+  --bed ukb_cal_chr19_v2.bed
+  --bim ukb_snp_chr19_v2.bim
+  --fam ukb51119_cal_chr19_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.19
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+26186 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.19.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c19_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c19_b0_v2.bgen
+  --out ukb22438_c19_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c19_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.20.log.
+Options in effect:
+  --bed ukb_cal_chr20_v2.bed
+  --bim ukb_snp_chr20_v2.bim
+  --fam ukb51119_cal_chr20_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.20
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+19959 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.20.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c20_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c20_b0_v2.bgen
+  --out ukb22438_c20_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c20_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.21.log.
+Options in effect:
+  --bed ukb_cal_chr21_v2.bed
+  --bim ukb_snp_chr21_v2.bim
+  --fam ukb51119_cal_chr21_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.21
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+11342 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.21.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c21_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c21_b0_v2.bgen
+  --out ukb22438_c21_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c21_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.22.log.
+Options in effect:
+  --bed ukb_cal_chr22_v2.bed
+  --bim ukb_snp_chr22_v2.bim
+  --fam ukb51119_cal_chr22_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.22
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+12968 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.22.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_c22_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_c22_b0_v2.bgen
+  --out ukb22438_c22_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_c22_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb51119_cal_chr.20250918.X.log.
+Options in effect:
+  --bed ukb_cal_chrX_v2.bed
+  --bim ukb_snp_chrX_v2.bim
+  --fam ukb51119_cal_chrX_v2_s488264.fam
+  --make-bed
+  --out ukb51119_cal_chr.20250918.X
+  --remove-fam doNotUse.20250918.txt
+
+15844 MB RAM detected; reserving 7922 MB for main workspace.
+18857 variants loaded from .bim file.
+488377 people (223467 males, 264796 females, 114 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ukb51119_cal_chr.20250918.X.nosex .
+Error: Failed to open doNotUse.20250918.txt.
+PLINK v1.90b6.9 64-bit (4 Mar 2019)            www.cog-genomics.org/plink/1.9/
+(C) 2005-2019 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ukb22438_cX_b0_v2_s487038.20250918.log.
+Options in effect:
+  --bgen ukb22438_cX_b0_v2.bgen
+  --out ukb22438_cX_b0_v2_s487038.20250918
+  --recode bgen-1.1
+  --remove-fam doNotUse.20250918.txt
+  --sample ukb22438_cX_b0_v2_s487038.sample
+
+Error: Invalid --recode parameter 'bgen-1.1'.
+For more information, try 'plink --help <flag name>' or 'plink --help | more'.
+Thu 18 Sep 15:11:13 BST 2025

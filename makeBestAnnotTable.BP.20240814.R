@@ -9,10 +9,15 @@ BestModel="UKBB.BP.forAnnot.20240814"
 BestGenesFile="BP.20240814.bestGenes.txt"
 TestsFile="/home/rejudcu/UKBB/RAPfiles/pars/UKBB.annot.allTests.20240815.txt"
 TopTestsFile="BP.topTests.20240814.txt"
+
+SummFile="/home/rejudcu/bipex/gva.BP.getScores.20250711.SUMMARY.txt"
+BestGenesFile="BP.bipex.20250730.bestGenes.txt"
+TopTestsFile="BP.bipex.topTests.20250730.txt"
+
 NewModel="UKBB.BP.best.annot.20240815"
 NewArgFile=sprintf("/home/rejudcu/pars/rsco.%s.rarg",NewModel)
 
-DxCommand="dx cd / ; dx run swiss-army-knife -y --instance-type mem3_hdd2_v2_x4 -imount_inputs=FALSE -iin=/scripts/runScoreassoc.20240815.sh "
+DxCommand="dx cd / ; dx run swiss-army-knife -y --ignore-reuse --instance-type mem3_hdd2_v2_x4 -imount_inputs=FALSE -iin=/scripts/runScoreassoc.20240815.sh "
 
 
 wd="/home/rejudcu/UKBB/BP.20240814"
@@ -35,7 +40,7 @@ for (gene in Top[,1]) {
 }
 
 if (!AllDone) {
-	cmd=sprintf("bash /home/rejudcu/UKBB/RAPfiles/scripts/getAllSaos.20240815.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
+	cmd=sprintf("bash /home/rejudcu/UKBB/RAPfiles/RAPscripts/getAllSaos.20240815.sh %s %s for.%s.lst",BestModel,BestGenesFile,BestModel)
 	print("Command to run analyses on RAP:")
 	print(cmd)
 	print("Should be repeated until all analyses have run and results downloaded")
