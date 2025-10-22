@@ -7,9 +7,17 @@
 # Produce annotations with GPN for that interval and upload them
 # Run intVarAssoc on each interval 
 
-wd="/home/rejudcu/UKBB/ANK3"
-Model="UKBB.ANK3.20250917"
-IntervalsFile="ANK3intronpart.20250919.txt"
+wd="/home/rejudcu/UKBB/LDLRpromoter.20250814"
+Model="UKBB.HL.nonCoding.20250814"
+Model="UKBB.HL.nonCoding.analysePrevious.20251017"
+Model="UKBB.HL.nonCoding.analyseWithPrevious.20251017"
+IntervalsFile="LDLRnonCoding.20251017.txt"
+
+Model="UKBB.HL.nonCoding.analysePrevious.20251017"
+IntervalsFile="LDLRallNonCoding.20251019.txt"
+
+Model="UKBB.HL.nonCoding.analyseWithPrevious.20251017"
+IntervalsFile="LDLRnonCoding.20251017.txt"
 
 setwd(wd)
 args = commandArgs(trailingOnly=TRUE)
